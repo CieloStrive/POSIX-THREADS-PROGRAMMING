@@ -1,16 +1,16 @@
-#POSIX THREADS PROGRAMMING SUMMARY WITH EXERCISE NOTES
+# POSIX THREADS PROGRAMMING SUMMARY WITH EXERCISE NOTES
 
 ---
 
-####An hello.c Example
-####Argument Passing
-####Thread Exiting
-####Stack Management
-####Mutex
-####Condition Variables
+#### An hello.c Example
+#### Argument Passing
+#### Thread Exiting
+#### Stack Management
+#### Mutex
+#### Condition Variables
 
 ---
-##An hello.c Example
+## An hello.c Example
 
 1. Create, compile and run a Pthreads "Hello world" program
 
@@ -60,7 +60,7 @@ Notes:
 
 ---
 
-##Argument Passing
+## Argument Passing
 
 1. Review the hello_arg2.c example codes. Notice how the how to pass multiple arguments through a structure.
    
@@ -166,7 +166,7 @@ Note:
 
 ---
 
-##Thread Exiting
+## Thread Exiting
 
 1. Review, compile (for gcc include the -lm flag) and run the bug5.c program.
 2. What happens? Why? How would you fix it?
@@ -198,7 +198,7 @@ bug:
 
 ---
 
-##Stack Management
+## Stack Management
 
 1. Review, compile and run the bug2.c program.
 2. What happens? Why? How would you fix it?
@@ -245,7 +245,7 @@ Things to note:
 
 ---
 
-##Mutexes
+## Mutexes
 
 1. Review, compile and run the dotprod_serial.c program. As its name implies, it is serial - no threads are
 created.
@@ -430,7 +430,7 @@ bug:
 
 ---
 
-##Condition Variables
+## Condition Variables
 
 1. Review, compile and run the condvar.c program. This example is essentially the same as the shown in the
 tutorial. Observe the output of the three threads.
