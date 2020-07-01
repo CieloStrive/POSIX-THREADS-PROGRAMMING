@@ -18,7 +18,7 @@
 
 3. The thread's "print hello" routine accepts the thread ID argument and prints "hello world from thread #". Then it calls pthread_exit to finish. Main program calls pthread_exit as the last thing it does.
    
-```
+```cpp
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -68,7 +68,7 @@ Notes:
 
 
 
-```
+```cpp
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -171,7 +171,7 @@ Note:
 1. Review, compile (for gcc include the -lm flag) and run the bug5.c program.
 2. What happens? Why? How would you fix it?
 
-```
+```cpp
 int main(int argc, char *argv[])
 {
   pthread_t threads[NUM_THREADS];
@@ -203,7 +203,7 @@ bug:
 1. Review, compile and run the bug2.c program.
 2. What happens? Why? How would you fix it?
 
-```
+```cpp
 int main(int argc, char *argv[])
 {
   pthread_t threads[NTHREADS];
@@ -251,7 +251,7 @@ Things to note:
 created.
 2. Now review, compile and run the dotprod_mutex.c program. This version of the dotprod program uses threads and requires a mutex to protect the global sum as each thread updates it with their partial sums.
 
-```
+```cpp
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -398,7 +398,7 @@ pthread_exit(NULL);
 
 4. Review, compile and run the bug6.c program.
 
-```
+```cpp
 void *dotprod(void *arg)
 {
   /* Each thread works on a different set of data.
@@ -437,7 +437,7 @@ tutorial. Observe the output of the three threads.
 
 2. Now, review, compile and run the bug1.c program. Observe the output of the five threads. What happens? See if you can determine why and fix the problem. The explanation is provided in the bug examples table above, and an example solution is provided by the bug1fix.c program.
 
-```
+```cpp
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -545,7 +545,7 @@ bug:
 
 3. The bug4.c program is yet another example of what can go wrong when using condition variables. Review, compile (for gcc include the -lm flag) and run the code. Observe the output and then see if you can fix the problem. The explanation is provided in the bug examples table above, and an example solution is provided by the bug4fix.c program.
 
-```
+```cpp
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
